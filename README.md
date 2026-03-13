@@ -1,4 +1,6 @@
 # git and GitHub course
+Please read till the end, Iwrote this all by myself (except for like the six lines that Igot from the README file you have sent and the git docs)
+
 What I Learned During the Course
 Table of contents:
 git
@@ -66,6 +68,102 @@ Speaking of commands, I'll get into each command and what its core functionality
 
 git commands:
 git init - to start a project I would intiate a new repository to store that project in by using the command `git init`
-the GitHub equivilant to that command is using the bytton 'new reposptory' or 'new' after entering the Reposotories page.
+the GitHub equivilant to that command is using the button 'new reposptory' or 'new' after entering the Reposotories page.
+
+'touch' (to make a file) or the type of file name (ex: vi, vim, nano):
+building a project by adding code or documenting something (usually with the file extention like txt or md) requiers a file to store that data. to create the file I would use the command 'touch' and to enter the file I would use the type of the file then the name of the file, ex: 'vi name-of-file-1'
+on GitHub, there is a 'create file' button on the top right corner of the repository page which will make an empty file appear, but to make a directory I would just add a slash '/' at the end of the name of the file.
+
+I kind of already explained 'git add' and 'git commit' earlier, so I'll move on to the next command.
+
+git push:
+this is a command which is used to sync the commits between the local repository and the remote reposotory. So pushing all the files "upstream".
+when I commit a file on GitHub that's basically the two commands git commit and git push in one command.
+
+git pull:
+basically the oppsit of git push; pulling part of or all of the project from the remote repository to the local one.
+
+ls:
+To view the project repository's content. use ls -a to display all files, including hidden ones (such as .git).
+on GitHub it's viewed on the left handside pannel.
+
+git status:
+Shows the status of my working directory and staging area. showing which files are staged, unstaged, or untracked.
+
+git log:
+Shows the history of the commits, all of the metadata of who commited the changes and when.. etc
+on GitHub, it can be shown by pressing the '# commits' button the it will show the page with all the metadata of the commits and users who commited them.
+
+git diff:
+Used to show the differences between the working directory and the staging area.
+
+git merge:
+merging commits (two at a time) in one branch.
+
+git branch:
+By using the command 'git branch <name of branch>' I would create a branch if the name of that branch doesn't exist yet, and by using 'git branch' I would list the branches that already exist. Branches allow you to work on different features or fixes without affecting the main codebase
+on GitHub, there's a dropdown menue on the left handside with the name of the active branch
+
+gitcheckout:
+Used to switch between branches or revert files to a previous state.
+by using 'gitcheckout <name of branch>' I would switch to that branch and make it the active branch.
+
+git cherry-pick:
+This allows me to apply specific commits from one branch to another without merging the entire branch.
+
+git reset:
+Removes files from the staging area, but keeps changes in the working directory.
+
+git reflog:
+If I accidentally reset my branch and lost commits, they may not appear in git log, but they are still in the reflog
+
+git rebase:
+changing the base of a particular branch. so mioving a branch into another base, whether it's the tip or in the middle of a given branch.
+
+git restore:
+Restores files to their previous state.
+
+There are some terms that I want to go over quickly like:
+Squashing:
+combines multiple commits into a single commit. This is often used to clean up a commit history before merging branches.
+
+Atomic commit:
+It doesn't really exist for git but it's a term worth knowing that is used when I commit a simple change like adding a line in a file, each time I do that, that is said to be as commiting atomic commits.
+
+Fork:
+forking is copying a repository/ project from one GitHub account remote repository into another. and to copy that copy to my local machine; then I need use the command:
+
+git clone:
+is cloning/ copying a repository/ project from a remote one into my local machine.
+
+git reset: moving the Head to a specific commit.
+
+hard: deletes whatever is in the WT and the index and keeps only the commited changes
+soft: Leave my working tree files and the index unchanged.
+mixed (default): Leaves my WT unchanged. Updates the index to match the new HEAD, so nothing will be staged.
+
+gitignore: A gitignore file specifies intentionally untracked files that Git should ignore. Files already tracked by Git are not affected.
 
 
+
+Lesson of the day:
+I miss writing and I really should work on that Medium account that I never got around to.
+
+Advice: This excersise should be at the end of every program (or every part of a program if it's a long one) to help make a personal resource that I can go back to and for others to do so as well. it also helped me realize how much information I was missing and how much I have gained.
+
+Lessons learned from this program (without going into too much detailes):
+- Prospective
+- educational institutians vs learning methods
+- opinion vs facts
+- creating pictures > consuming information
+- Solid base first then go into the rest of the journey
+- Concept --> Example --> Practice --> Feedback
+repeat the process
+- as a morally ok scientist would say: "The fact that you could, does not mean that you should"
+- trust my instinct in that; I'm not slow, I'm just building a solid base
+
+and sooooo much more
+
+I know this might be just a git and github program from the outside, and the fact that I wasn't accepted into the program should be enough to not make me attend, but I'm so gratful that I evantually did attend because this was one of the better experiences in Tuwaiq Academy.
+
+Author: Afnan Mohammed AlFaidi
