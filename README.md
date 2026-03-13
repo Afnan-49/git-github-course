@@ -61,4 +61,11 @@ One of the things that we have learned or relearned in this course, is that to m
 
 
 GitHub:
-Github is one of many examples of a remote repository
+Github is a platform inwhich I and/ or teams can store their data as a backup. It is one of many examples of a remote repository an it's basically another interface for git, just in parallel to commands, there are buttons, arrows, dropdown menues.. etc, interacting with my mouse and keyboard.
+Speaking of commands, I'll get into each command and what its core functionality is, and its parallel acton in GitHub:
+
+git commands:
+git init - to start a project I would intiate a new repository to store that project in by using the command `git init`
+the GitHub equivilant to that command is using the bytton 'new reposptory' or 'new' after entering the Reposotories page.
+
+
