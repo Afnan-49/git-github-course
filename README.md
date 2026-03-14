@@ -76,7 +76,7 @@ I veiw a tag as a marker in a book; it signifies specific (usually important) po
 
 One of the things that we have learned or relearned in this course, is that to make sure that we understand something and to explain that thing effectevly, it's better for us to come up with a picture that flows with the logic of the information and connects the concepts that we've learned together -because no knowladge or tool in the world is isolated.. so here is a simple picture (albeit from the git docs and not from me) that organizes the connection between each Object:
 
-![Data Model Diagram](./images/data-model-3.png)
+https://github.com/Afnan-49/git-github-course/blob/1e62ef66388303c7535b6b5423df43e7a5818ef8/data-model-3.png
 
 ## GitHub:
 Github is a platform in which I and/ or teams can store their data as a backup. It is one of many examples of a remote repository and it's basically another interface for git, just in parallel to commands, there are buttons, arrows, dropdown menues.. etc, interacting with my mouse and keyboard.
