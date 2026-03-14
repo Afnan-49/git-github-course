@@ -9,7 +9,8 @@ Thank you for your time.
 - git
 - GitHub
 - git Commands (and their parallel on GitHub)
-- more of what I learned -brain dump-
+- More of what I learned -brain dump-
+- Lessons learned and advice
 
 
 ## What is git?
