@@ -1,5 +1,7 @@
 # git and GitHub course
-Please read till the end, I wrote this all by myself (except for like the six lines that I got from the README file you have sent and the git docs)
+
+Please read till the end, I wrote this all by myself (except for like the six lines that I got from the SAFCSP README file and the git docs).
+Thank you for your time.
 
 ## What I Learned During the Course
 
@@ -21,7 +23,7 @@ on the outside git is usaully a blank screen or an organized UI, but internally 
 It starts with the .git file at the root, from there the project expands, if the .git file is not at the root of the project, then git doesn't "see" my project (the working tree).
 
 ### How is git structured?
-git can be maped in three core places or areas and an extra fourth one (so four really):
+git can be mapped in three core places or areas and an extra fourth one (so four really):
 
 1. the Working Tree (WT) or the Working Directory (WD)
 2. the Index or Stage
@@ -29,26 +31,27 @@ git can be maped in three core places or areas and an extra fourth one (so four 
 4. Stash
 
 #### WT/ WD:
-This is the place where I would work on my files. I see it as an active playground in whitch I can minipulate the content of my files, and with each edit the working tree can be described as 'dirty', and when there are no modifications the working tree can be described as 'clean' (but to me it's never actually clean).
+This is the place where I would work on my files. I see it as an active playground in whitch I can minipulate the content of my files, and with each edit the working tree can be described as 'dirty', and when there are no modifications, the working tree can be described as 'clean' (but to me it's never actually clean).
 
 #### the Index/ Stage:
-It's where the files move when I am done with editing them. to use the taught analogy; it's like placing my groceries in a basket/ trolly, after each choice was made to pick up a product I would collect them in one basket, so that I can check them out all at once. This is where I would use the command 'git add'.
+It's where the files move when I am done with editing them. To use the taught analogy; it's like placing my groceries in a basket/ trolly, after each choice was made to pick up a product I would collect them in one basket, so that I can check them out all at once. This is where I would use the command `git add`.
 
 #### .git:
-Is where the "checkout" happens. After adding my modified files in the Stage area, then I am ready to 'commit' them. Placing my files in the .git area (using the command "git commit"); forms, let's say a finished product, that you can use with other commits to run a program for example.
+Is where the "checkout" happens. After adding my modified files in the Stage area, then I am ready to 'commit' them. Placing my files in the .git area (using the command `git commit`); forms, let's say a finished product, that you can use with other commits to run a program for example.
 
 #### Stash:
-To me this is the most self-explanitory term, although I didn't know it existed (even when we all needed it). the stash is where I can.. well, stash my files away from the rest of the project and from the rest of the team if I were to be working with one.
+To me this is the most self-explanitory term, although I didn't know it existed (even when we all needed it). The stash is where I can.. well, stash my files away from the rest of the project and from the rest of the team if I were to be working with one.
 
 ---
 
 To expand the picture of git further, let's place myself inside of that labyrinth and work from there:
 adding a commit into the .git area forms the "initial commit", and adding another after another commit forms a branch in the visual sense, but there is also a branch that points to the last commit formed (it's automatically called the main or master branch), on top of that branch there's a **Head** which points to that branch.
 Each one of these commits refers to the one before, so if I want to start a different branch growing from one of the commits in the main branch, each commit there would refer to the one before it untill the root commit, but not the one after the base commit -the original branch from which the new branch formed-.
+There's also the case of the **detached head**; that's when the Head directly points to a commit rather than a named branch. This is useful for working on changes without affecting the branches of the project. The thing that I should be keeping in mind though, is that if I went back to an existing branch without naming the commit that the Head was pointing to (to creat a branch of all the commits that had a detached head before it and connecting it to an existing branch), then all the detached head commits are lost.
 
 ---
 
-Before moving on to the next section, there are some details concerning commits, and branches; so each commit is named with a hash number that is stored in the .git database, and each branch, like the main branch or branch X that moves with the last commit is just a name that helps the human using the machine remeber that branch's name, but to the machine that branch is just another commit with another hash number. It's also worth mentioning that one commit can have two named branches pointing at it, but only one head moves with one named branch at a time. so you can move the Head to the main branch or branch X, but it is the only one there in the entire project/ working tree.
+Before moving on to the next section, there are some details concerning commits and branches; so each commit is named with a hash number that is stored in the .git database, and each branch, like the main branch or branch X that moves with the last commit is just a name that helps the human using the machine remember that branch's name, but to the machine that branch is just another commit with another hash number. It's also worth mentioning that one commit can have two named branches pointing at it, but only one head moves with one named branch (or one commit in the case of the detached head) at a time. so you can move the Head to the main branch or branch X, but it is the only one there in the entire project/ working tree.
 
 --------
 
@@ -76,19 +79,20 @@ I veiw a tag as a marker in a book; it signifies specific (usually important) po
 
 One of the things that we have learned or relearned in this course, is that to make sure that we understand something and to explain that thing effectevly, it's better for us to come up with a picture that flows with the logic of the information and connects the concepts that we've learned together -because no knowladge or tool in the world is isolated.. so here is a simple picture (albeit from the git docs and not from me) that organizes the connection between each Object:
 
-![image alt](https://github.com/Afnan-49/git-github-course/blob/1e62ef66388303c7535b6b5423df43e7a5818ef8/data-model-3.png)
+<img src="https://github.com/Afnan-49/git-github-course/blob/1e62ef66388303c7535b6b5423df43e7a5818ef8/data-model-3.png?raw=true" width="50%" />
 
 ## GitHub:
 Github is a platform in which I and/ or teams can store their data as a backup. It is one of many examples of a remote repository and it's basically another interface for git, just in parallel to commands, there are buttons, arrows, dropdown menues.. etc, interacting with my mouse and keyboard.
-Speaking of commands, I'll get into each command and what its core functionality is, and its parallel acton in GitHub:
+
+Speaking of commands, I'll get into each command and what its core functionality is, and its parallel acton on GitHub:
 
 ---
 
 ## git commands:
 
 ### git init:
-To start a project I would intiate a new repository to store that project in by using the command `git init`
-the GitHub equivilant to that command is using the button **new reposptory** or **new** after entering the Reposotories page.
+To start a project I would initiate a new repository to store that project in by using the command `git init`
+the GitHub equivilant to that command is using the button **new reposptory** or **new** after entering the Repositories page.
 
 ### touch:
 using the command `touch` (to make a file) or the type of file name (ex: `vi`, `vim`, `nano`):
@@ -123,7 +127,7 @@ merging commits (two at a time) in one branch.
 
 ### git branch:
 By using the command `git branch -name of branch-` I would create a branch if the name of that branch doesn't exist yet, and by using `git branch` I would list the branches that already exist. Branches allow you to work on different features or fixes without affecting the main codebase.
-on GitHub, there's a dropdown menue on the left handside with the name of the active branch
+on GitHub, there's a dropdown menue on the left handside with the name of the active branch, and the default branch, and I can add a new branch from pressing the button '# branch' then 'New branch'.
 
 ### gitcheckout:
 Used to switch between branches or revert files to a previous state.
@@ -136,7 +140,7 @@ This allows me to apply specific commits from one branch to another without merg
 Removes files from the staging area, but keeps changes in the working directory.
 
 ### git reflog:
-If I accidentally reset my branch and lost commits, they may not appear in git log, but they are still in the reflog
+If I accidentally reset my branch and lost commits, they may not appear in git log, but they are still in the reflog.
 
 ### git rebase:
 changing the base of a particular branch. so moving a branch into another base, whether it's the tip or in the middle of a given branch.
@@ -154,6 +158,9 @@ Combines multiple commits into a single commit. This is often used to clean up a
 ### Atomic commit:
 It doesn't really exist for git but it's a term worth knowing that is used when I commit a simple change like adding a line in a file, each time I do that, that is said to be as commiting atomic commits.
 
+### Conflicts:
+conflicts accure when changes made on the same file from two different branches, and I started merging them. To resolve conflicts, I just have to choose one thing to place in that file -one of the two changes, both changes, delete them all, or change the content of the file entirely-.
+
 ### Fork:
 Forking is copying a repository/ project from one GitHub account remote repository into another. and to copy that copy to my local machine; then I need to use the command:
 
@@ -162,12 +169,12 @@ is cloning/ copying a repository/ project from a remote one into my local machin
 
 ### git reset:
 moving the Head to a specific commit.
-### Types of rests:
-### hard:
+#### Types of resets:
+#### hard:
 deletes whatever is in the WT and the index and keeps only the commited changes
-### soft:
-Leave my working tree files and the index unchanged.
-### mixed (default):
+#### soft:
+Leaves my working tree files and the index unchanged.
+#### mixed (default):
 Leaves my WT unchanged. Updates the index to match the new HEAD, so nothing will be staged.
 
 ### gitignore:
@@ -176,27 +183,27 @@ A gitignore file specifies intentionally untracked files that Git should ignore.
 ------------
 
 ## Lesson of the day:
-I miss writing and I really should work on that Medium account that I never got around to.
+I miss writing and I really should work on that Medium/ Substack account that I never got around to.
 
 ## Advice:
 This excersise should be at the end of every program (or every part of a program if it's a long one) to help make a personal resource that I can go back to and for others to do so as well. it also helped me realize how much information I was missing and how much I have gained.
 
-## Lessons learned from this program (without going into too much detailes):
-- Prospective
-- educational institutians vs learning methods
-- opinion vs facts
+## Lessons learned from this program (without going into too much detail):
+- perspective
+- educational institutions and learning methods
+- opinion vs fact
 - creating pictures > consuming information
 - Solid base first then go into the rest of the journey
-- Concept --> Example --> Practice --> Feedback
-repeat the process
+- Concept --> Example --> Practice --> Feedback  -- repeat the process
 - as a morally ok scientist would say: "The fact that you could, does not mean that you should"
-- trust my instinct in that; I'm not slow, I'm just building a solid base
+- trust my instinct in that; I'm not slow (I don't really have to be "fast"), I'm just building a solid base.
 
 and sooooo much more
 
-I know this might be just a git and github program from the outside, and the fact that I wasn't accepted into the program should be enough to not make me attend, but I'm so gratful that I evantually did attend because this was one of the better experiences in Tuwaiq Academy.
+I know this might be just a git and github program from the outside, and the fact that I wasn't accepted into the program should be enough to not make me attend, but I'm so grateful that I eventually did attend and that I was welcomed to, because this was one of the best experiences at Tuwaiq Academy.
 
 ---
 
 Author: Afnan Mohammed AlFaidi
+
 Thank you!
