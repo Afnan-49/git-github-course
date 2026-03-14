@@ -191,7 +191,7 @@ This excersise should be at the end of every program (or every part of a program
 
 ## Lessons learned from this program (without going into too much detail):
 - perspective
-- educational institutions and learning methods
+- educational institutions vs learning methods
 - opinion vs fact
 - creating pictures > consuming information
 - Solid base first then go into the rest of the journey
