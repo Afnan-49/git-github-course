@@ -168,7 +168,7 @@ Forking is copying a repository/ project from one GitHub account remote reposito
 ### git clone:
 is cloning/ copying a repository/ project from a remote one into my local machine.
 
-### git reset:
+### git revert:
 moving the Head to a specific commit.
 #### Types of resets:
 #### hard:
