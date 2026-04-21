@@ -96,8 +96,8 @@ To start a project I would initiate a new repository to store that project in by
 the GitHub equivilant to that command is using the button **new reposptory** or **new** after entering the Repositories page.
 
 ### touch:
-using the command `touch` (to make a file) or the type of file name (ex: `vi`, `vim`, `nano`):
-building a project by adding code or documenting something (usually with the file extention like txt or md) requiers a file to store that data. To create the file I would use the command **touch** and to enter the file I would use the type of the file then the name of the file, ex: 'vi name-of-file-1'
+using the command `touch` (to make a file) or the type of file editor name (ex: `vi`, `vim`, `nano`):
+building a project by adding code or documenting something (usually with the file extention like txt or md) requiers a file to store that data. To create the file I would use the command **touch** and to enter the file I would use the type of the file editor then the name of the file, ex: 'vi name-of-file-1'
 on GitHub, there is a **create file** button on the top right corner of the repository page which will make an empty file appear, but to make a directory I would just add a slash '/' at the end of the name of the file.
 
 I kind of already explained 'git add' and 'git commit' earlier, so I'll move on to the next command.
